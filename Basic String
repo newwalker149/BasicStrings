@@ -1,0 +1,45 @@
+print('Hello World') #This is how to print a string with single quotes
+print("Hello World") # this is how to print a string with double quotes
+print("Ricky\'s World") #This is how to print a a string with a quotes as a part of the string
+print('Euroweek\'s World') #This is another example of printing a string with the quotes inside
+
+#This is how to make a multiple line
+
+"""print(""My Name is Ricky.
+I\'m originally from Indonesia
+and now I\'m Living in Poland"")"""
+
+message = ('Hello World') #This is Variable which is storing place to assign or refers a value
+print(len(message)) #This is how to count the length of the characters written/
+print(message[0:7]) #This is how to print a particular characters
+print(message[:7]) #But to print that we start count the Index with 0,1,2, so on
+print(message[5:]) #Index is the characters that appears in our variable that the order start from 0
+
+print(message.upper()) #To make all of the string have uppercase
+print(message.lower()) #To make all of the string lowecase
+
+print(message.count('Hello')) #for printing the numbers of the word Hello appears in the string in this case Hello World
+print(message.count('l')) #for printng the numbers of the letter l appears in the string in this case Hello World
+print(message.count('o')) #for printing the number of the letter o appears in the string in this case Hello World
+
+print(message.find('Hello')) #to print in which index our string belongs to
+print(message.find('World')) #they will indicating the 1st letter that we asked for in this case, we asked World of Hello World and its in index 6
+
+message = message.replace('World', 'Universe') #to replace the values of the variable by making new variable but the same name
+                                               #to print the values inside the variable, you don't need to put the quotates
+
+
+#We try to add multiple string and concatenate with 2 variables
+greeting = "Hello"
+name = "Michael"
+message1 = greeting + name # This is how to add multiple strings and concatenate by adding 2 variables
+print(message1)
+message2 = greeting +", " + name + "!"
+print(message2)
+
+#To make is simple we can Format
+message3='{}, {}. Welcome!'.format(greeting,name)
+print(message3)
+
+message4 = f'{greeting}, {name}. Welcome!' # This is how to add multiple strings and concatenate in an easy way  
+print(message4)
